@@ -8,7 +8,7 @@ import "./AddTask.css";
 import { Link } from "react-router-dom";
 
 export default function AddTask() {
-  const { user, tasks, tasksIsLoading, isLoading } = useStateValue()[0];
+  const { user, tasks } = useStateValue()[0];
   const history = useHistory();
   const { id } = useParams();
   const forEditTask = tasks.find((t) => t.id === id);

@@ -9,6 +9,7 @@ import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer/authReducer";
 import { Redirect } from "react-router-dom";
 import AddTask from "./components/AddTask";
+import TodoList from "./components/TodoList";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -71,7 +72,7 @@ function App() {
               {!user && <Redirect to="/" />}
             </Route>
             <Route path="/">
-              <Todos />
+              <TodoList />
             </Route>
           </Switch>
         </div>
