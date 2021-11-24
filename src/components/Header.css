@@ -1,0 +1,89 @@
+.header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 50px;
+ padding: 0 20px;
+}
+
+.header img{
+ height: 40px;
+}
+
+.header__authentication{
+ min-width: 300px;
+}
+
+.signin{
+ margin-right: 15px !important;
+}
+
+
+a{
+ text-decoration: none;
+}
+
+.header__profileInfo{
+ min-width: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.header__profileInfoEmail{
+ font-weight: 500;
+ font-size: large;
+}
+
+.header__profileInfoBtn{
+ cursor: pointer;
+ background-color: #4169E1;
+ color: white;
+ border: none;
+ border-radius: 5px;
+}
+
+.header__profileInfoAddTaskIcon{
+ color: black;
+}
+
+.header__notificationImportant {
+ position: relative;
+}
+
+.header__notificationImportantTasksLength{
+ background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: crimson;
+    border: 2px solid white;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    /* box-shadow: 1px 1px 1px black; */
+    color: white;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 20px; 
+    min-width: 14px;
+    text-align: center;
+    padding: 4px 3px 0 3px;
+    position: absolute;
+    left: 16px;
+    top: -2px
+}
+
+.MuiSvgIcon-root{
+ cursor: pointer;
+ font-size: 28px !important;
+}
+
+.header__logout{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+    
+.header__logout >div {
+    position: absolute;
+    right: 2px;
+    font-size: 10px;
+    color: gray;
+}

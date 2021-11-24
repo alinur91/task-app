@@ -1,0 +1,22 @@
+.container{
+ display: grid;
+ place-items: center;
+ margin-top: 40px;
+}
+
+.tasks{
+ width: 550px;
+ /* height: 400px; */
+ /* overflow: scroll; */
+ /* overflow-x:unset; */
+ background-color: white;
+ color: #4d4d4d;
+}
+
+.container >p{
+ color: crimson;
+}
+
+.add-task-link{
+ text-decoration: underline;
+}

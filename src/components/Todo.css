@@ -1,0 +1,57 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.todo__right {
+  display: flex;
+  align-items: center;
+}
+
+.todo__right img{
+  margin-right: 10px;
+}
+
+.todo-completed {
+  background-color: lightgreen;
+}
+
+.done-iconHidden {
+  height: 50px;
+  visibility: hidden;
+}
+
+.title-date {
+  margin-left: 5px;
+}
+
+.title-date > p {
+  font-style: italic;
+  font-size: 13px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.title-date >h4{
+  font-weight:unset;
+  margin-bottom: 10px;
+}
+
+.todo_created-userName {
+  font-weight: 800;
+  text-transform:capitalize
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.done-icon{
+  height: 30px;
+}
