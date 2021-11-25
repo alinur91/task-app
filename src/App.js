@@ -23,7 +23,7 @@ function App() {
         if (!authUser.displayName) {
           setTimeout(() => {
             dispatch({ type: actionTypes.SET_USER, user: authUser });
-          }, 500);
+          }, 800);
         } else {
             dispatch({ type: actionTypes.SET_USER, user: authUser });
         }
