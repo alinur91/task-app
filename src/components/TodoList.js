@@ -6,7 +6,7 @@ import LoadingSpinner from '../UI/LoadingSpinner'
 import "./TodoList.css";
 
 export default function TodoList() {
-  const { tasks, tasksIsLoading } = useStateValue()[0];
+  const { tasks, tasksIsLoading,user } = useStateValue()[0];
   const [authorizationErr, setauthorizationErr] = useState(false);
   
   useEffect(() => {
@@ -26,9 +26,20 @@ export default function TodoList() {
         <div>
           {" "}
           <h2>Задачи еще не созданы!</h2>{" "}
-          <Link className="add-task-link" to="/submit">
-            Перейти на страницу для создание задачи.
-          </Link>{" "}
+          {user ? (
+            <Link className="add-task-link" to="/submit">
+              Перейти на страницу для создание задачи.
+            </Link>
+          ) : (
+            <>
+              <Link className="add-task-link" to="/signin">
+                Войдите в систему,чтобы создавать задачи!
+              </Link>
+              <Link className="add-task-link" to="/register">
+                Нет аккаунта? Перейти на страницу регистрации.
+              </Link>
+            </>
+          )}
         </div>
       ) : (
         <>

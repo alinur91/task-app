@@ -48,6 +48,8 @@ function App() {
         dispatch({ type: actionTypes.SET_TASKS, tasks });
         dispatch({ type: actionTypes.TASKS_IS_LOADING, tasksIsLoading: false });
       });
+      
+      
   }, [dispatch]);
 
     return (
